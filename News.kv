@@ -1,0 +1,81 @@
+<News>:
+    BoxLayout:
+        id: login_layout
+        orientation: 'vertical'
+        padding: [10,50,10,50]
+        spacing: 50
+
+        Label:
+            text:'[color=3ca72b][font=ComicSansMS3] [u] Welocme to BEST \n[i] NewsReader [/i] application.[/u][/font][/color]'
+            font_size: 28
+            markup:True
+        
+		BoxLayout:
+			orientation: 'horizontal'
+			TextInput:
+				id:name
+				multiline:False
+				font_size:14
+				hint_text: 'Enter your name'
+				text_size: root.width-20, root.height-20
+				pos_hint: {'center_x': 0.85, 'center_y': 0.75}
+				size_hint: 0.95, 0.9
+					
+					
+			Button:
+				    
+				text: 'Submit'
+                size: 180,50
+                font_size: 24
+                on_press: root.this(name.text)
+                pos_hint: {'center_x':0.85, 'center_y':0.75}
+				size_hint: 0.95 , 0.9
+			
+		Label:
+			text:'[u][/u]'
+			id:display
+			font_type: 'BodoniFLF-Bold'
+			font_size:16
+			markup:True
+		Button:
+				    
+			text: '[font=ComicSansMS3]-> Sports[/font]'
+            size: 180,50
+            font_size: 24
+            on_press: root.kuch_bhi()
+            pos_hint: {'center_x':0.5, 'center_y':0.55}
+			size_hint: 0.8 , 0.8
+			background_color: 0,0,0,0
+			markup:True
+			
+		Button:
+				    
+			text: '[font=ComicSansMS3]-> Politics[/font]'
+            size: 180,50
+            font_size: 24
+            on_press: root.kuch_bhi()
+            pos_hint: {'center_x':0.5, 'center_y':0.55}
+			size_hint: 0.8 , 0.8
+			background_color: 0,0,0,0
+			markup:True
+		
+		Button:
+				    
+			text: '[font=ComicSansMS3]-> Film[/font]'
+            size: 180,50
+            font_size: 24
+            on_press: root.kuch_bhi()
+            pos_hint: {'center_x':0.5, 'center_y':0.55}
+			size_hint: 0.8 , 0.8
+			background_color: 0,0,0,0
+			markup:True
+            
+            
+		#TextInput:
+			#id:msg
+			#multiline:True
+			#font_size:14
+			#hint_text: ''
+			#text_size: root.width-20, root.height-20
+			#pos_hint: {'center_x': 0.5, 'center_y': 0.1}
+			#size_hint: 0.95, 3.0

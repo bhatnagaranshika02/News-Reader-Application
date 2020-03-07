@@ -1,0 +1,18 @@
+#:include News.kv
+<Welcome>:
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'images/front.jfif'
+    FloatLayout:
+        Button:
+            id: flash
+			text: "[color=2b5fa7][font=Baskerville][size=54]WeLcOmE[/size][/font][/color]\n[color=3cs72b][font=BodoniFLF-Bold][size=36]To[/size][/font][/color]\n[color=Black][font=Broadway][size=71]N[/size][/font][font=BodoniFLF-Bold][size=24]ews[/size][/font][font=BodoniFlF-Bold][size=72]R[/size][/font][font=BodoniFLF-Bold][size=24]eader[/size][/font]"
+            on_press: root.do_change()
+			markup:True
+            size_hint: 0.6, 0.4
+            pos_hint: {'center_x' :.5,'center_y':.5}
+            font_size:30
+			background_color:0,0,0,0
+            
